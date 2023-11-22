@@ -1,5 +1,5 @@
 {
-	"name": "Test postCreateCommand",
+	"name": "postCreateCommand",
 	"image": "mcr.microsoft.com/devcontainers/universal:linux",
 
 	"settings": {
@@ -7,21 +7,21 @@
 	},
 
 	// Visual Studio Code extensions which help authoring for docs.github.com.
-	"extensions": [
+	"extensions": {
 		"dbaeumer.vscode-eslint",
 		"sissel.shopify-liquid"
 	],
 
 	"hostRequirements": {
 	   "cpus": 8,
-	   "memory": "8gb",
-	   "storage": "32gb" 
+	   "memory": "64gb",
+	   "storage": "124gb" 
 	},
 		
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [5000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "echo Added: `date` > aaa-TEST.txt"
+	"postCreateCommand": "echo Added: `date` > aaa-running.txt"
 
 }
